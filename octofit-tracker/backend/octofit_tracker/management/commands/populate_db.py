@@ -5,7 +5,7 @@ class Command(BaseCommand):
     help = 'Populate the octofit_db database with test data'
 
     def handle(self, *args, **kwargs):
-        # Ensure related objects are saved before creating dependent entries
+        # Ensure related objects are saved before creating dependent entries 
         user1 = User.objects.create(email="john.doe@example.com", name="John Doe", password="password123")
         user2 = User.objects.create(email="jane.smith@example.com", name="Jane Smith", password="password456")
 
